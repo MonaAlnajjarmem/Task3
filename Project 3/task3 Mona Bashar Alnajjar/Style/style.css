@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* part nav */
+header nav {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(70, 93, 111);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    color: white;
+    position: relative;
+}
+
+header nav .right-side .checkbtn {
+    font-size: 30px;
+    color: #ffff;
+    float: right;
+    line-height: normal;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+    transition: 1s;
+}
+
+#check {
+    display: none;
+}
+
+header nav .right-side .link li {
+    margin: 0 15px;
+}
+
+
+header nav .right-side .link {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* اضافة */
+header nav a:hover {
+    transform: scale(1.20);
+    /* تكبير الكارد عند التحويم */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* part Hero */
+.Hero {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: rgb(64, 222, 169);
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* اضافة صغيرة.. */
+header .Hero h2 {
+    color: white;
+    border-color: aqua;
+    text-shadow: 0px 0px 10px cyan,
+        0px 0px 20px cyan,
+        0px 0px 40px cyan,
+        0px 0px 100px cyan;
+
+}
+
+/*  */
+header .Hero .image {
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    background-color: rgb(70, 93, 111);
+}
+
+.im {
+    position: absolute;
+    /* top: -30px; */
+    bottom: 0;
+}
+
+header .Hero .verticle-line {
+    border: 2px solid;
+}
+
+.fas.fa-star {
+    font-size: 26px;
+}
+
+.iicon {
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.part1 {
+    padding-top: 20px;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.verticle-line {
+    width: 90px;
+    height: 1px;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    animation: pulse 1.5s infinite;
+    /* إضافة تأثير نبضي */
+}
+
+/* اضافة */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scaleY(1.2);
+        opacity: 0.7;
+    }
+}
+
+/* part one */
+.PORTFOLIO {
+    width: 82%;
+    margin-top: 20px;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px 200px;
+
+}
+
+.common {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* اضافة */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+/* اضافة */
+.common:hover {
+    transform: scale(1.20);
+    /* تكبير الكارد عند التحويم */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#Css {
+    background-color: rgba(153, 13, 83, 0.817);
+}
+
+#Java {
+    background-color: rgb(61, 158, 172);
+}
+
+#GitHub {
+    background-color: black;
+}
+
+#Html {
+    background-color: rgb(30, 134, 176);
+}
+
+#Git {
+    background-color: rgb(36, 29, 237);
+}
+
+#JS {
+    background-color: rgba(181, 154, 115, 0.685);
+}
+
+.common2 {
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#css {
+
+    background-image: url("./../iimage/transparent-css-icon-extention-icon-file-icon-5d706efc8b93a5.4765377215676495325717.png");
+}
+
+#java {
+
+    background-image: url("./../iimage/transparent-javascript-icon-an-icon-reading-java-in-red-and-blue65cc6574f03a97.501140001707894132984.png");
+}
+
+#gitHub {
+    background-image: url("./../iimage/kisspng-github-icon-5d4177560bcf94.7287891915645714780484.png");
+}
+
+#html {
+
+    background-image: url("./../iimage/transparent-document-icon-extension-icon-html-icon-5d706290db1039.4893321415676463528973.png");
+}
+
+#git {
+
+    background-image: url("./../iimage/transparent-coding-icon-e-learning-icon-git-icon-5d64b740696916.3641287015668816004318.png");
+}
+
+#js {
+    background-image: url("./../iimage/transparent-javascript-icon-file-type-icon-5fb319e664c471.8857624616055730944128.png");
+}
+
+/* part2 */
+.part2 {
+    padding-top: 20px;
+    width: 100%;
+    /* height: 60vh; */
+    background-color: rgb(64, 222, 169);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.part2 .verticle-line {
+    border: 2px solid white;
+}
+
+.paragraph {
+    columns: 200px 2;
+    column-gap: 70px;
+    color: white;
+    padding: 40px;
+}
+
+.paragraph p {
+    width: 300px;
+}
+
+.part2 button {
+    width: 180px;
+    height: 40px;
+    background-color: rgb(64, 222, 169);
+    border: 2px solid white;
+}
+
+.part2 button:hover {
+    transform: scale(1.20);
+    /* تكبير الكارد عند التحويم */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.part2 button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* part3 */
+.part3 {
+    padding-top: 20px;
+    width: 100%;
+    height: 70vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Form {
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    position: relative;
+}
+
+.width-input {
+    width: 350px;
+    height: 30px;
+    border: 2px solid rgb(197, 196, 196);
+    box-shadow: 0 0 8px 1px rgba(255, 255, 255, 0.071);
+    color: rgb(197, 196, 196);
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    border-bottom-color: rgb(197, 196, 196);
+}
+
+#Message {
+    width: 350px;
+    height: 70px;
+    border: 2px solid rgb(197, 196, 196);
+    box-shadow: 0 0 8px 1px rgba(255, 255, 255, 0.071);
+    color: rgb(197, 196, 196);
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    border-bottom-color: rgb(197, 196, 196);
+}
+
+#Btn {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    color: white;
+    background-color: rgb(64, 222, 169);
+    border-radius: 10px;
+    border: 2px solid rgb(64, 222, 169);
+}
+
+/* ضافة */
+#Btn:hover {
+    transform: scale(1.20);
+    /* تكبير الكارد عند التحويم */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* .part4  */
+.part4 {
+    width: 100%;
+    background-color: rgb(70, 93, 111);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.part4-border {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 300px;
+    color: white;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.part4-bordertopart {
+    width: 200px;
+}
+
+.icon-color {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.icon {
+    background-color: rgb(70, 93, 111);
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.icon:hover {
+    transform: scale(1.20);
+    /* تكبير الكارد عند التحويم */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon-color a {
+    text-decoration: none;
+}
+
+.part4-bordertopart p a {
+    color: rgb(64, 222, 169);
+}
+
+.part4 h3 {
+    padding-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    height: max-content;
+    padding: 10px;
+    background-color: rgb(49, 67, 81);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    width: 20px;
+    border: 2px solid;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+
+/* media */
+@media (max-width: 970px) {
+
+    header nav .left-side {
+        width: 100%;
+        height: 40px;
+        padding: 10px 13px;
+        font-size: 9px;
+    }
+
+    header nav .right-side .checkbtn {
+        display: flex;
+
+    }
+
+    header nav .right-side .link {
+        /* فينا ما نظهر شي */
+        display: none;
+        /*  او فيني اظهر الناف تحت  */
+        /* float: left;
+        position: absolute;
+        top: 50px;
+        left: 35%;
+        margin: auto;
+        text-align: center;
+        font-size: 7px; */
+    }
+
+}
+
+@media(max-width:415px) {
+    header nav {
+        height: 40px;
+        padding: 8px 10px;
+        font-size: 7px;
+    }
+
+    header nav .right-side .toggle-button {
+        display: flex;
+    }
+
+    header nav .right-side .link {
+        display: none;
+
+        /*و فيني اظهر الناف تحت  */
+        /* display: flex;
+        float: left;
+        position: absolute;
+        top: 50px;
+        left: 30%;
+        margin: auto;
+        text-align: center;
+        font-size: 5px; */
+
+    }
+}
